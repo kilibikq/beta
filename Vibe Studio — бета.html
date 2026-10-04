@@ -1,0 +1,90 @@
+<!DOCTYPE html>
+<html lang="ru">
+<head>
+<meta charset="utf-8">
+<meta name="viewport" content="width=device-width, initial-scale=1, viewport-fit=cover">
+<title>Vibe Studio — сайты под ключ</title>
+<style>
+:root{box-sizing:border-box;padding-top:env(safe-area-inset-top,0px);padding-bottom:env(safe-area-inset-bottom,0px);
+--bg:#fafaf7;--fg:#16161a;--mut:#62626b;--card:#fff;--line:#e6e6df;--acc:#5b4bff;--acc2:#ff6b4a}
+@media (prefers-color-scheme:dark){:root:not([data-theme="light"]){--bg:#0e0e12;--fg:#f2f2f5;--mut:#9a9aa6;--card:#17171d;--line:#2a2a33;--acc:#8b7fff;--acc2:#ff8a6e}}
+:root[data-theme="dark"]{--bg:#0e0e12;--fg:#f2f2f5;--mut:#9a9aa6;--card:#17171d;--line:#2a2a33;--acc:#8b7fff;--acc2:#ff8a6e}
+html{scroll-padding-top:env(safe-area-inset-top,0px);scroll-behavior:smooth}
+*{box-sizing:border-box}
+body{margin:0;background:var(--bg);color:var(--fg);font-family:system-ui,-apple-system,"Segoe UI",Roboto,sans-serif;line-height:1.55}
+.w{max-width:1000px;margin:0 auto;padding:0 20px}
+nav{display:flex;justify-content:space-between;align-items:center;padding:18px 0}
+.logo{font-weight:800;font-size:20px}.logo b{color:var(--acc)}
+nav a{color:var(--mut);text-decoration:none;margin-left:18px;font-size:14px}
+.hero{padding:70px 0 50px}
+.tag{display:inline-block;border:1px solid var(--line);border-radius:99px;padding:4px 12px;font-size:13px;color:var(--mut)}
+h1{font-size:clamp(34px,7vw,60px);line-height:1.08;margin:18px 0;letter-spacing:-.02em}
+h1 span{background:linear-gradient(90deg,var(--acc),var(--acc2));-webkit-background-clip:text;background-clip:text;color:transparent}
+.lead{font-size:18px;color:var(--mut);max-width:560px}
+.btn{display:inline-block;margin:24px 10px 0 0;padding:13px 24px;border-radius:12px;background:var(--acc);color:#fff;text-decoration:none;font-weight:600}
+.btn.o{background:transparent;color:var(--fg);border:1px solid var(--line)}
+section{padding:46px 0}
+h2{font-size:28px;margin:0 0 22px}
+.g{display:grid;grid-template-columns:repeat(auto-fit,minmax(230px,1fr));gap:16px}
+.c{background:var(--card);border:1px solid var(--line);border-radius:16px;padding:22px}
+.c h3{margin:0 0 6px;font-size:18px}.c p{margin:0;color:var(--mut);font-size:15px}
+.th{height:120px;border-radius:12px;margin-bottom:14px}
+.price{font-size:30px;font-weight:800;margin:6px 0}
+.n{color:var(--acc);font-weight:800;font-size:22px}
+form{display:grid;gap:12px;max-width:480px}
+input,textarea{width:100%;padding:13px;border-radius:10px;border:1px solid var(--line);background:var(--card);color:var(--fg);font:inherit}
+button{padding:13px;border:0;border-radius:10px;background:var(--acc);color:#fff;font-weight:600;font-size:16px;cursor:pointer}
+#ok{display:none;color:var(--acc)}
+footer{padding:30px 0;color:var(--mut);font-size:14px;border-top:1px solid var(--line)}
+</style>
+</head>
+<body>
+<div class="w">
+<nav><div class="logo">Vibe<b>.</b>Studio</div><div><a href="#uslugi">Услуги</a><a href="#raboty">Работы</a><a href="#ceny">Цены</a><a href="#kontakt">Контакты</a></div></nav>
+
+<header class="hero">
+<span class="tag">Бета-версия · принимаем первых клиентов</span>
+<h1>Сайты, которые <span>приносят заявки</span></h1>
+<p class="lead">Лендинги и многостраничные сайты для бизнеса. Быстро, современно, адаптивно. Первый макет — за 2–3 дня.</p>
+<a class="btn" href="#kontakt">Обсудить проект</a><a class="btn o" href="#raboty">Смотреть работы</a>
+</header>
+
+<section id="uslugi"><h2>Что делаем</h2>
+<div class="g">
+<div class="c"><h3>Одностраничники</h3><p>Лендинг под одну услугу или продукт с формой заявки.</p></div>
+<div class="c"><h3>Многостраничные сайты</h3><p>Услуги, о компании, каталог, блог, контакты.</p></div>
+<div class="c"><h3>Доработка и правки</h3><p>Обновим дизайн, ускорим, исправим мобильную версию.</p></div>
+</div></section>
+
+<section id="raboty"><h2>Работы (демо-концепты)</h2>
+<div class="g">
+<div class="c"><div class="th" style="background:linear-gradient(135deg,#ffb36b,#ff6b4a)"></div><h3>Кофейня</h3><p>Концепт: меню, адрес, бронирование столика.</p></div>
+<div class="c"><div class="th" style="background:linear-gradient(135deg,#6bd1ff,#5b4bff)"></div><h3>Барбершоп</h3><p>Концепт: услуги, мастера, онлайн-запись.</p></div>
+<div class="c"><div class="th" style="background:linear-gradient(135deg,#8be0a4,#1f9d6b)"></div><h3>Фитнес-студия</h3><p>Концепт: расписание, тарифы, пробное занятие.</p></div>
+</div></section>
+
+<section id="ceny"><h2>Цены (ориентир)</h2>
+<div class="g">
+<div class="c"><h3>Лендинг</h3><div class="price">от 5 000 ₽</div><p>1 страница, форма заявки, адаптив.</p></div>
+<div class="c"><h3>Сайт до 5 страниц</h3><div class="price">от 12 000 ₽</div><p>Структура, дизайн, базовое SEO.</p></div>
+<div class="c"><h3>Расширенный</h3><div class="price">по запросу</div><p>Каталог, блог, интеграции.</p></div>
+</div></section>
+
+<section><h2>Как работаем</h2>
+<div class="g">
+<div class="c"><div class="n">1</div><h3>Бриф</h3><p>Задачи, примеры, сроки.</p></div>
+<div class="c"><div class="n">2</div><h3>Макет</h3><p>Покажем первую версию.</p></div>
+<div class="c"><div class="n">3</div><h3>Правки</h3><p>Дорабатываем под вас.</p></div>
+<div class="c"><div class="n">4</div><h3>Запуск</h3><p>Публикация и передача.</p></div>
+</div></section>
+
+<section id="kontakt"><h2>Оставьте заявку</h2>
+<form onsubmit="event.preventDefault();document.getElementById('ok').style.display='block'">
+<input placeholder="Имя" required><input placeholder="Telegram или телефон" required>
+<textarea rows="3" placeholder="Коротко о проекте"></textarea>
+<button type="submit">Отправить</button><div id="ok">Спасибо! Это демо-форма: подключите свой Telegram/почту.</div>
+</form></section>
+</div>
+<footer><div class="w">© 2026 Vibe Studio · Бета-версия</div></footer>
+</body>
+</html>
